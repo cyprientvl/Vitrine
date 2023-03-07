@@ -1,0 +1,87 @@
+{
+  "HEADER": {
+    "a1": "Fonctionnalités",
+    "a2": "Shop",
+    "a3": "Recrutements",
+    "a4": "Nous contacter",
+    "a5": "Télécharger l'application",
+    "a6": "English"
+
+  },
+
+  "BAND": {
+    "p1": "Sneakify Autofill est enfin disponible en extension pour Google Chrome. Fonctionnalité gratuite pour tous les membres !",
+    "p2": "En savoir plus"
+  },
+
+  "HOME": {
+    "h1":"Obtenez",
+    "h2":"toutes",
+    "h3":"les sorties sneakers.",
+    "p1": "Sneakify, la première application iOS qui vous aide à obtenir toutes les sorties sneakers au prix d'achat.",
+    "p2": "Télécharger gratuitement",
+    "p3": "Essentiel du quotidien",
+    "p4": "Sneakify bien plus qu'un outil.",
+    "p5": "Soyez les premiers à obtenir les dernières sorties sneakers au prix d'achat, initez vous à la revente",
+    "p6": "dès maintenant avec Sneakify.",
+    "p7": "Guides releases",
+    "p8": "Découvrez un large choix de guides pour les débutants comme pour les plus expérimentés. Les guides sont constamment mis à jour et ajoutés en fonction des drops.",
+    "p9": "Découvrez comment fonctionnent les guides",
+    "p10": "Accédez à toutes les raffles par tirage au sort en Europe. Que ce soit en magasin ou en ligne : entre 30 à 50 raffles par sorties, vous n'en oublierez aucune.",
+    "p11": "Découvrez comment fonctionnent les raffles",
+    "p12": "Suivi des ventes",
+    "p13": "Calcul automatique du chiffre d'affaire et du bénéfice réalisé sur l'ensemble de vos ventes, historique détaillé (il est relié en temps réel aux fluctuations du marché comme Stock X, GOAT, ...).",
+    "p14": "Découvrez comment fonctionne le suivi des ventes",
+    "p15": "Des notifications envoyées quotidiennement : alertes de restock (remise en stock), shockdrop (sortie surprise qui n'a pas été annoncée) et conseils...",
+    "p16": "Découvrez nos notifications optimisées",
+    "p17": "Marché",
+    "p18": "Tous nos membres peuvent facilement et rapidement poster des annonces de vente, d'achat ou d'échange. Vous pouvez proposer votre prix d'achat, libre à vous de négocier !",
+    "p19": "Découvrez comment fonctionne le marché",
+    "p20": "Conversation",
+    "p21": "L'espace conversation vous permet de discuter entre membres, donner des informations ou même d'effectuer un deal. Vous avez la possibilté de créer des groupes privés ou publics.",
+    "p21.1": "Découvrez les différents types de conversation",
+    "p22": "Outils",
+    "p23": "Des outils comme un autofill (saisie automatique de vos informations personnelles et bancaires)... Et bien plus de fonctionnalités à découvrir sont disponibles sur Sneakify !",
+    "p24": "Découvrez les différents outils mis à votre disposition",
+    "p25": "Ce n'est pas tout",
+    "p26": "Encore plus, toujours plus...",
+    "p27": "Sneakify ne cesse de vous proposer de nouveaux outils pour vous permettre d'avoir toutes les chances de votre côté !",
+    "p28": "Inscrivez-vous à notre newsletter",
+    "p28.2": "pour ne plus rien rater !",
+    "p29": "Inscrivez-vous à notre newsletter pour recevoir toute l'actualité sneakers et apprendre comment cop ",
+    "p30": "Pas de spam, promis !",
+    "p31": "S'inscrire",
+    "p32": "elfsight-app-5b4b33d2-0831-4d3b-b591-65cd04a8cd97",
+    "p33": "toutes les prochaines sorties sneakers au prix d'achat."
+    
+  },
+
+  "POPUP": {
+    "p1": "L'autofill Sneakify est disponible !",
+    "p2": "Mais maintenant comment l'installer ?",
+    "p3": "Vous venez de télécharger un fichier en .zip",
+    "p4": "Vous devez l'unziper, ouvrer le fichier et vous allez trouver un autre fichier 'Sneakify_Autofill_Export'",
+    "p5": "Ce fichier, glissez le sur votre bureau",
+    "p6": "Ensuite sur Google Chrome et uniquement sur Google Chrome allez sur les 3 petits points",
+    "p6.2": "tout en haut à droite et ensuite sur 'Plus d'outils' et ensuite 'Extensions'",
+    "p7": "Pour l'ajouter, dernière étape, cliquez sur 'Charger l'extension non empaquetée'",
+    "p7.2": "et ajouter le fichier Sneakify, si vous n'arrivez pas à faire ça, plus simple, glissez le fichier de votre bureau à cette page.",
+    "p8": "Pour le rendre visible, tout en haut de votre page Google Chrome, appuyez sur la pièce de puzzle",
+    "p8.2": "et épingler l'Autofill !",
+    "p9": "Cliquez sur le logo et l'autofill est ouvert !",
+    "p10": "Si vous avez besoin d'aide, rendez-vous sur le support Sneakify ou sur notre Instagram : @sneakify_fr",
+    "p11": "Télécharger gratuitement"
+
+  },
+
+  "FOOTER":{
+    "p1": "Nous contacter",
+    "p2": "Via e-mail",
+    "p3": "À propos",
+    "p4": "Mentions Légales",
+    "p5": "Conditions générales d'utilisation",
+    "p6": "Politique de confidentialité",
+    "p7": "Nos réseaux"
+    
+  }
+}

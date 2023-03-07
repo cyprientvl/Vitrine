@@ -1,0 +1,35 @@
+<div class="top">
+    <h2>Sneakify <span>shop</span></h2>
+    <p>Trouve l’article qui définit le mieux ton style !</p>
+</div>
+
+<div class="center">
+    <div class="contentArticle">
+        
+        <div class="article" *ngFor="let item of listItem, let i = index">
+            <div class="livraison">
+                <span class="material-symbols-outlined">
+                    local_shipping
+                    </span>
+                <p>Livraison gratuite</p>
+            </div>
+
+            <img src="{{item.images[0]}}">
+            <h3>{{ item.nom }}</h3>
+            <p class="desc" [innerHtml]="item.description"></p>
+            <p class="price">{{ listprice[i] }}€</p>
+            <div class="seeMore">
+                <div class="voirPlus">
+                    En savoir plus
+                </div>
+                <div class="cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+{
+  "HEADER": {
+    "a1": "Features",
+    "a2": "Shop",
+    "a3": "Recruitments",
+    "a4": "Contact us",
+    "a5": "Download the app",
+    "a6": "Français"
+
+  },
+
+  "HOME": {
+    "h1":"Obtenez",
+    "h2":"all",
+    "h2.1":"Get",
+    "h3":"the sneaker releases.",
+    "p1": "Sneakify, the first iOS app that helps you get all the sneaker releases at purchase price.",
+    "p2": "Download for free",
+    "p3": "Daily essentials",
+    "p4": "Sneakify is much more than a tool.",
+    "p5": "Be the first to get the latest sneaker releases at purchase price, learn how to resell",
+    "p6": "right now with Sneakify.",
+    "p7": "Releases guides",
+    "p8": "Discover a wide range of guides for beginners as well as for the more experienced. The guides are constantly updated and added according to the drops.",
+    "p9": "Find out how the guides work",
+    "p10": "Access all the raffles by lottery in Europe. Whether in-store or online: between 30 and 50 raffles per release, you won't miss a single one.",
+    "p11": "Find out how raffles work",
+    "p12": "Sales tracking",
+    "p13": "Automatic calculation of turnover and profit on all your sales, detailed history (it is linked in real time to market fluctuations like Stock X, GOAT, ...).",
+    "p14": "Learn how sales tracking works",
+    "p15": "Notifications sent daily: restock alerts, shockdrop (unannounced surprise release) and tips...",
+    "p16": "Discover our optimized notifications",
+    "p17": "Marketplace",
+    "p18": "All our members can easily and quickly post ads for sale, purchase or exchange. You can propose your purchase price, free to negotiate!",
+    "p19": "Find out how the marketplace works",
+    "p20": "Chat",
+    "p21": "The conversation area allows you to discuss between members, give information or even make a deal. You have the possibility to create private or public groups.",
+    "p21.1": "Discover the different types of chat",
+    "p22": "Tools",
+    "p23": "Tools like an autofill (automatic entry of your personal and banking information)... And many more features to discover are available on Sneakify !",
+    "p24": "Discover the different tools at your disposal",
+    "p25": "That's not all",
+    "p26": "More, always more...",
+    "p27": "Sneakify is constantly offering new tools to give you the best chance of success!",
+    "p28": "Subscribe to our newsletter",
+    "p28.2": "to not miss anything!",
+    "p29": "Sign up for our newsletter to receive all the latest sneaker news and learn how to copy ",
+    "p30": "No spam, promise!",
+    "p31": "Sign up",
+    "p32": "elfsight-app-a5e7cf23-8223-43a4-aafd-fe3e622e9e32",
+    "p33": "all the upcoming sneaker releases at purchase price."
+
+  },
+
+  "POPUP": {
+    "p1": "Sneakify autofill is available!",
+    "p2": "But now how to install it?",
+    "p3": "You have just downloaded a .zip file",
+    "p4": "You have to unzip it, open the file and you will find another file 'Sneakify_Autofill_Export'",
+    "p5": "This file, drag it to your desktop",
+    "p6": "Then on Google Chrome and only on Google Chrome go to the 3 little dots",
+    "p6.2": "at the very top right and then to 'More Tools' and then 'Extensions'.",
+    "p7": "at the very top right and then to 'More Tools' and then 'Extensions'",
+    "p7.2": "and add the Sneakify file, if you can't do that, easier, drag the file from your desktop to this page.",
+    "p8": "To make it visible, at the very top of your Google Chrome page, tap on the puzzle piece",
+    "p8.2": "and pin the Autofill!",
+    "p9": "Click on the logo and the autofill is open!",
+    "p10": "If you need help, head over to Sneakify support or our Instagram: @sneakify_fr",
+    "p11": "Download for free"
+
+  },
+
+  "FOOTER":{
+    "p1": "Contact us",
+    "p2": "By e-mail",
+    "p3": "About us",
+    "p4": "Legal Notice",
+    "p5": "Terms and conditions of use",
+    "p6": "Privacy Policy",
+    "p7": "Our social networks"
+    
+  }
+}

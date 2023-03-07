@@ -1,0 +1,152 @@
+.top{
+    padding: 150px 0px;
+}
+
+.top h2{
+    color: #08264A;
+    font-weight: 700;
+    font-size: 100px;
+    margin: 0;
+}
+
+.top h2 span{
+    position: relative;
+}
+
+.top h2 span::after{
+    content: "";
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    background-color: #2E6BF5;
+    height: 10px;
+    position: absolute;
+    border-radius: 20px;
+}
+.top p{
+    font-size: 18px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.contentArticle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 !important;
+    gap: 50px;
+    margin-bottom: 10px !important;
+}
+
+.article{
+    border-radius: 10px;
+    background-color: white;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.02);
+    position: relative;
+    white-space: pre-line;
+
+}
+
+.article img{
+    width: 280px;
+    height: 240px;
+}
+
+.article h3{
+    padding-top: 5px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.article .desc{
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000CC;
+}
+
+.article .price{
+    font-weight: 600;
+    margin: 0;
+    font-size: 19px;
+}
+
+.seeMore{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.voirPlus{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px 60px;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.voirPlus:hover{
+    background-color: black;
+    color: white;
+}
+
+.cart{
+    background-color: black;
+    padding: 6px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.cart span{
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.livraison{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #2E6BF5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    padding: 5px 10px;
+    top: 20px;
+    left: 0;
+}
+
+.livraison p{
+    margin: 0;
+}
+
+.livraison span{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+
+}

@@ -1,0 +1,59 @@
+
+<div class="main" >
+    <div class="left">
+
+        <div id="image-carousel" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide" *ngFor="let item of image">
+                    <div class="part-img">
+                        <img [src]="item" loading="lazy">
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </div>
+    <div class="right" *ngIf="infoItem != null">
+
+        <div class="absolut">
+            <p>Détails composition</p>
+            <p>Livraison et retour</p>
+        </div>
+
+        <div class="titre">
+            <h2>{{infoItem.nom}}</h2>
+            <p [innerHtml]="infoItem.description"></p>
+        </div>
+
+        <div class="colors">
+            <h3>Coloris</h3>
+            <div class="list">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="taille">
+            <div class="titleTaille">
+                <h3>Taille</h3>
+                <p>Guides des tailles</p>
+            </div>
+            <div class="list">
+                <div class="select">XS</div>
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+            </div>
+        </div>
+
+        <div class="add">
+            <p>Ajouter au panier</p>
+            <p>34,95€</p>
+        </div>
+
+    </div>
+</div>

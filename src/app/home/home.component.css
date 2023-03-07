@@ -1,0 +1,837 @@
+
+.band{
+    background-color: #2E6BF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 10px;
+    z-index: 10;
+}
+
+.band p{
+    color: white;
+}
+
+.btnsavoirplus{
+    color: #2E6BF5;
+    background-color: white;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.btnsavoirplus:hover{
+    background-color: #2E6BF5;
+    color: white;
+}
+
+#img4{
+    transform: translateX(-2%) !important;
+}
+
+#accueil{
+    min-height: 125vh;
+    position: relative;
+}
+
+#accueil .img1{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0px;
+}
+
+#accueil .img2{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 600px;
+}
+
+#accueil .center{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    z-index: 2;
+}
+#accueil .center h1{
+    font-size: 110px;
+    line-height: 130px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #08264A;
+}
+#accueil .center h1 span{
+    position: relative;
+}
+#accueil .center h1 span:after { 
+    border-radius: 25px;
+    position: relative;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12px;
+    border-radius: 25px;
+    background: #2E6BF5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+#accueil .center p{
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+.bouttons{
+    display: block;
+    z-index: 1;
+    margin: 25px auto;
+    position: relative;
+}
+.bouttons a{
+    background-color: #2E6BF5;
+    color:white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .3s;
+    font-size: 16px;
+}
+
+#fonctionnalités{
+    width: 100%;
+    display: block;
+}
+
+.modifwidth{
+    width: auto !important;
+}
+
+#fonctionnalités h3{
+    font-weight: 700;
+    color: #08264A;
+    margin-bottom: 10px;
+    z-index: 3;
+}
+
+#fonctionnalités h2{
+    font-size: 64px;
+    margin: auto;
+    font-weight: 700;
+    color: #2E6BF5;
+    z-index: 10;
+}
+#fonctionnalités p.sous{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+#fonctionnalités ul{
+    padding: 0;
+    list-style: none;
+    width: 60%;
+    margin: 300px auto;
+    display: block;
+}
+#fonctionnalités ul li{
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 475px;
+    display: flex;
+    margin: 50px auto;
+    text-align: left;
+    padding: 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#fonctionnalités ul li div{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 49.5%;
+    min-height: 475px;
+    position: relative;
+}
+
+#fonctionnalités ul li div img{
+    width: 130%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#fonctionnalités ul li div:nth-child(2n-1) img{
+    left: 0;
+    right: unset;
+    width: 140%;
+}
+
+#fonctionnalités ul li p:first-of-type{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 60px 0;
+}
+#fonctionnalités ul li p:last-of-type{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 60px 0;
+}
+
+#fonctionnalités ul li a{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2E6BF5;
+    margin-bottom: 20px;
+    display: block;
+}
+#more{
+    position: relative;
+}
+#more h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #08264A;
+    margin: 0;
+}
+#more h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #2E6BF5;
+    margin: 10px;
+}
+#more p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 250vh;
+    width: 60%;
+    margin: auto;
+}
+
+#more #img1{
+    position: absolute;
+    left: 0;
+    width: 90%;
+    top: 0px;
+}
+
+#more #img2{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 400px;
+}
+
+#more #img3{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -150vh;
+    width: 1100px;
+}
+
+#newsletter{
+    position: relative;
+    background-color: black;
+    z-index: 50;
+}
+
+#newsletter h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #2E6BF5;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+#newsletter p{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    font-weight: 400;
+    line-height: 25px;
+    color: white;
+    display: block;
+}
+
+#newsletter .form{
+    padding: 150px 0;
+    display: block;
+    position: relative;
+    background-color: black;
+}
+
+#newsletter form{
+    background-color: white;
+    padding: 1px;
+    border-radius: 109px;
+    margin: auto;
+    display: block;
+    width: 500px;
+    text-align: left;
+}
+#newsletter input[type="text"]{
+    background-color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 368px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Faktum', sans-serif;
+    display: inline-block;
+    border-radius: 109px;
+}
+#newsletter input[type="text"]::placeholder{
+    color: #D7D7D7;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Faktum', sans-serif;
+}
+#newsletter button{
+   color: white;
+   background-color: #2E6BF5;
+   font-family: 'Faktum', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 25px;
+   border-radius: 109px;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   transition: .5s;
+}
+
+#newsletter button:hover{
+    background-color: white;
+    color: #2E6BF5;
+}
+
+#applestore{
+    position: relative;
+}
+
+#applestore #img4{
+    position: relative;
+    top: -550px;
+    width: 60%;
+    display: block;
+    margin: auto;
+    z-index: 0;
+}
+.opa{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    z-index: 1;
+    width: 100%;
+}
+.opacitywhite{
+    background: linear-gradient(360deg, #F4F5F7 6.09%, rgba(244, 245, 247, 0) 100%);
+}
+
+.opacityblack {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.862903) 13.02%, rgba(0, 0, 0, 0.645833) 32.29%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.popNewsLetter{
+    max-height: 100vh;
+    width: 60%;
+    background-color: white;
+    box-shadow: -1px 1px 30px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 30px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    z-index: 10000000;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.affiche{
+    transform: translateX(-50%) translateY(-50%) !important;
+    opacity: 1 !important;
+}
+
+.popNewsLetter .form{
+    padding-top: 25px;
+    padding-bottom: 75px;
+    display: block;
+    position: relative;
+}
+
+.popNewsLetter form{
+    background-color: #F6F6F6;
+    padding: 1px;
+    border-radius: 109px;
+    margin: auto;
+    display: block;
+    width: 495px;
+    text-align: left;
+    border: 1px solid #0000001A;
+
+}
+.popNewsLetter input[type="text"]{
+    background-color: #F6F6F6;
+    padding: 12px 20px;
+    border: none;
+    width: 368px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Faktum', sans-serif;
+    display: inline-block;
+    border-radius: 109px;
+}
+.popNewsLetter input[type="text"]::placeholder{
+    color: #D7D7D7;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Faktum', sans-serif;
+}
+.popNewsLetter button{
+   color: white;
+   background-color: #2E6BF5;
+   font-family: 'Faktum', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 25px;
+   border-radius: 109px;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.popNewsLetter button:hover{
+    background-color: white;
+    color: #2E6BF5;
+}
+
+.popNewsLetter h2{
+    font-size: 55px;
+    margin: auto;
+    font-weight: 700;
+    color: #2E6BF5;
+    z-index: 3;
+}
+
+.popNewsLetter span{
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.popNewsLetter p{
+    line-height: 25px;
+}
+
+.popNewsLetter span {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#popup.show{
+    display: block;
+}
+
+
+#popup{
+    display: none;
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 99999;
+    border-radius: 20px;
+}
+
+#popup img{
+    vertical-align: middle;
+}
+
+#popup label{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#popup h2{
+    color: #08264A;
+    font-size: 40px;
+}
+
+#popup h3{
+    font-size: 25px;
+}
+
+#popup ul{
+    list-style: none;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+#popup ul li{
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1700px) {
+    #accueil .center {
+        width: 65%;
+    }
+    #accueil .center h1 {
+        font-size: 90px;
+    }
+
+    #more p {
+        padding-bottom: 212vh;
+    }
+
+    #applestore #img4 {
+        top: -450px;
+    }
+}
+
+@media screen and (max-width: 1355px) {
+    #accueil .img2 {
+        top: 10vh;
+        width: 450px;
+    }
+
+    
+    #fonctionnalités ul {
+        width: 95%;
+    }
+
+    #more p {
+        padding-bottom: 189vh;
+    }
+
+    #applestore #img4 {
+        top: -350px;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    #accueil .center {
+        width: 80%;
+    }
+    #applestore #img4 {
+        top: -300px;
+    }
+
+    .download{
+        margin-left: 15px!important;  
+    }
+
+    #accueil .center h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    #fonctionnalités h2, #more h2, #newsletter h2 {
+        font-size: 44px;
+        line-height: 50px;
+        width: 90%;
+    }
+
+    #fonctionnalités p.sous, #more p, #newsletter p {
+        font-size: 15px;
+        width: 85%;
+        margin: auto;
+    }
+    #more p {
+        padding-bottom: 149vh;
+    }
+
+    #more #img3 {
+        width: 800px;
+        bottom: -100vh;
+    }
+
+    #applestore #img4 {
+        top: -250px;
+    }
+}
+
+@media screen and (max-width: 1224px){
+    .popNewsLetter{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1073px){
+
+    .band{
+        margin-top: 73px;
+    }
+
+    .download{
+        margin-right: 15px!important;  
+    }
+
+    #accueil{
+        margin-top: unset;
+    }
+    #accueil .img1 {
+        width: 50%;
+        top: 0px;
+    
+    }
+    #accueil .img2 {
+        top: 15vh;
+        width: 400px;
+    }
+
+    #fonctionnalités ul {
+        margin: 100px auto;
+    }
+
+    #fonctionnalités ul li p:first-of-type {
+        font-size: 25px;
+    }
+
+    #fonctionnalités ul li p:last-of-type {
+        font-size: 16px;
+    }
+
+    #fonctionnalités ul li a {
+        font-size: 17px;
+    }
+
+    #fonctionnalités ul li:nth-child(2n-1) div:first-of-type, #fonctionnalités ul li:nth-child(2n) div:last-of-type {
+        width: 35%;
+    }
+    #fonctionnalités ul li:nth-child(2n-1) div:last-of-type, #fonctionnalités ul li:nth-child(2n) div:first-of-type{
+        width: 64%;
+    }
+
+    #more p {
+        padding-bottom: 142vh;
+    }
+
+    #applestore #img4 {
+        top: -250px;
+        width: 80%;
+    }
+}
+@media screen and (max-height: 520px){
+    .popNewsLetter{
+        gap: 10px;
+    }
+
+    .popNewsLetter h2{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 860px){
+    .popNewsLetter h2{
+        font-size: 40px ;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #more #img1{
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .popNewsLetter{
+        padding: 20px 10px;
+    }
+
+    .popNewsLetter h2{
+        font-size: 30px;
+    }
+
+    .popNewsLetter form{
+        width: 90%;
+    }
+
+    .popNewsLetter input{
+        width: 65% !important;
+        padding: 12px 5px !important;
+
+    }
+
+    .popNewsLetter button{
+        width: 35%;
+        padding: 12px 0px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #accueil {
+        min-height: 115vh;
+    }
+
+    #accueil .center {
+        width: 95%;
+        margin: auto;
+    }
+
+    #accueil .center h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #accueil .center h1 span:after {
+        height: 8px;
+    }
+
+    #accueil .center p {
+        font-size: 17px;
+    }
+
+    #accueil .img2 {
+        top: 50vh;
+        width: 270px;
+    }
+
+    #fonctionnalités ul li{
+        flex-direction: column;
+    }
+
+    #fonctionnalités ul li:nth-child(2n){
+        flex-direction: column-reverse !important;
+    }
+
+    .modifwidth{
+        transform: translateX(-45%) !important;
+    }
+
+    #fonctionnalités ul li div {
+        display: block;
+        width: 100%!important;
+        text-align: center;
+    }
+
+    #fonctionnalités ul li div{
+        min-height: auto;
+    }
+
+    #fonctionnalités ul li p:first-of-type {
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    #fonctionnalités ul li div img {
+        position: relative;
+        object-fit: cover;
+        display: block;
+    }
+
+    #fonctionnalités ul li:nth-child(2n-1) div img{
+        transform: translateX(-36%);
+    }
+
+    #fonctionnalités ul li a{
+        padding-bottom: 20px;
+    }
+
+    #fonctionnalités ul li div img {
+        width: 150%!important;
+    }
+
+    #more #img1 {
+        top: 23vh;
+    }
+
+    #more #img2 {
+        top: 43vh;
+    }
+
+    #more p {
+        padding-bottom: 78vh;
+    }
+
+    #more #img3 {
+        width: 400px;
+        bottom: -45vh;  
+    }
+    #newsletter form{
+        width: 85%;
+    }
+    #newsletter input[type="text"] {
+        width: calc(100% - 99px);
+        font-size: 15px;
+    }
+
+    #newsletter input[type="text"]::placeholder{
+        font-size: 15px;
+    }
+
+    #newsletter button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    #applestore #img4 {
+        top: -200px;
+        width: 90%;
+    }
+
+    div.eapps-widget {
+        margin-top: -100px!important;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .band{
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #applestore #img4 {
+        top: -150px;
+        width: 95%;
+    }
+}

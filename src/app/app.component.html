@@ -1,0 +1,98 @@
+
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="" (click)="openmenu()">
+            <img src="assets/img/sneakify_v3.svg" alt="Logo Sneakify">
+        </a>
+      </li>
+      <li>
+        <a href="#fonctionnalités" onclick="openmenu()">
+          {{'HEADER.a1' | translate}} 
+
+        </a>
+    </li>
+      <li>
+        <a routerLink="shop" (click)="openmenu()">   
+          {{'HEADER.a2' | translate}} 
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/sneakify_fr/" target="_blank" (click)="openmenu()">    
+          {{'HEADER.a3' | translate}} 
+        </a>
+      </li>
+      <li>
+        <a href="mailto:contact@sneakify.fr" (click)="openmenu()"> 
+          {{'HEADER.a4' | translate}} 
+        </a>
+      </li>
+      <li class="download">
+        <a href="https://apps.apple.com/fr/app/sneakify/id1515974803" (click)="openmenu()">
+          {{'HEADER.a5' | translate}} 
+        </a>
+      </li>
+
+      <li>
+        <a (click)="changel()">
+          {{'HEADER.a6' | translate}} 
+        </a>
+      </li>
+    </ul>
+    <div id="nav-icon4" (click)="openmenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </nav>
+</header>
+    
+<router-outlet></router-outlet>
+
+
+
+<footer>
+    <ul>
+        <li>
+            <p>{{'FOOTER.p1' | translate}} </p>
+            <a href="mailto:contact@sneakify.fr">   
+              {{'FOOTER.p2' | translate}}
+            </a>
+        </li>
+        <li>
+            <p>{{'FOOTER.p3' | translate}}</p>
+            <a href="mentions-legales">
+              {{'FOOTER.p4' | translate}}
+            </a>
+            <br/>
+            <br/>
+            <a href="conditions">
+              {{'FOOTER.p5' | translate}}
+            </a>
+            <br/>
+            <br/>
+            <a href="confidentialite">
+              {{'FOOTER.p6' | translate}}
+            </a>
+        </li>
+
+        <li>
+            <p>
+              {{'FOOTER.p7' | translate}}
+            </p>
+            <div>
+                <a href="https://www.instagram.com/sneakify_fr" target="_blank"><img src="assets/img/insta.svg" alt="logo instagram"></a>
+                <a href="https://twitter.com/Sneakify_fr" target="_blank"><img src="assets/img/twitter.svg"  alt="logo twitter"></a>
+                <a href="https://www.linkedin.com/company/sneakify/" target="_blank"><img src="assets/img/linkedin.svg" alt="logo linkedin"></a>
+                <a href="https://www.tiktok.com/@sneakify_fr" target="_blank"><img src="assets/img/tiktok.svg" alt="logo tiktok"></a>
+            </div>
+        </li>
+
+        <li>
+            <img src="assets/img/logo.svg" width="60px" height="60px" alt="Logo Sneakify">
+            <span>Copyright © 2023 Sneakify. All rights reserved.</span>
+        </li>
+    </ul>
+</footer>
+

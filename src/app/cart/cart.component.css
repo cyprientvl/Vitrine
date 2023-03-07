@@ -1,0 +1,225 @@
+.main{
+    display: flex;
+    min-height: 100vh;
+}
+
+p{
+    margin: 0;
+}
+
+.left{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left img{
+    height: 555px;
+    width: 632px;
+}
+
+.right{
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    gap: 30px;
+}
+
+.gray{
+    color: #00000080;
+}
+
+.totoArticle, .livraison, .pay, .total, .codePromo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E6BF5;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.finish:hover{
+    background-color: white;
+    color: #2E6BF5;
+}
+
+.total p{
+    font-weight: 600;
+}
+
+.total .ch{
+    font-weight: bolder;
+    font-size: 19px;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.codePromo{
+    border-top: 1px solid #F4F5F7;
+    border-bottom: 1px solid #F4F5F7;
+    padding: 40px 0px;
+}
+
+.articlesAll{
+    margin-top: 30px;
+}
+
+
+.article{
+    padding-top: 60px;
+    border-top: 1px solid #F4F5F7;
+}
+
+.article .delete{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.article .delete p{
+    position: relative;
+    color: #000000E5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.article .delete p:hover{
+    color: red;
+}
+
+.article .delete p:hover::after{
+    background-color: red;
+
+}
+
+
+.article .delete p::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.article img{
+    width: 190px;
+    height: 170px;
+}
+
+.article .mid{
+    display: flex;
+    gap: 10px;
+}
+
+.mid .articleright h4{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+
+
+.mid .articleright p{
+    color: #000000CC;
+    font-size: 14px;
+}
+
+.articleTitle{
+    margin: 40px 0px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info div{
+    display: flex;
+    align-items: center;
+}
+
+.info div select{
+    border: none;
+}
+
+.info .price{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1240px){
+    .left{
+        width: 50%;
+
+    }
+
+    .left img{
+        height: 455px;
+        width: 532px;
+    }
+
+    .right{
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 1074px){
+    .main{
+        margin-top: 75px;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+
+    }
+
+    .right{
+        margin: 20px 0px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 520px){
+    .left img{
+        height: 325px;
+        width: 402px;
+    }
+
+    .mid{
+        flex-direction: column;
+    }
+    .articleTitle{
+        margin: 10px 0px;
+
+    }
+
+    .articleright{
+        margin-bottom: 20px;
+    }
+}

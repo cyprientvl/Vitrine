@@ -1,0 +1,222 @@
+.main{
+    display: flex;
+    min-height: 100vh;
+}
+
+.left{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img{
+    height: 555px;
+    width: 632px;
+}
+
+.right{
+    width: 30%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    gap: 30px;
+}
+
+.right .absolut{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 100px);
+    bottom: 0;
+    
+}
+
+.right .absolut p{
+    color: #00000080;
+    font-size: 11px;
+}
+
+.right .titre{
+    border-bottom: 1px solid #F4F5F7;
+    padding-bottom: 50px;
+}
+
+.right .titre h2{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right .titre p{
+    margin: 0px;
+    font-size: 15px;
+    color: #000000CC;
+}
+
+
+.right .colors h3{
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.colors .list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.colors .list div{
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 12px;
+    width: 12px;
+}
+
+.colors .list div:nth-child(1){
+    background-color: #F4F4F4;
+}
+
+.colors .list div:nth-child(2){
+    background-color: #000000;
+}
+
+.colors .list div:nth-child(3){
+    background-color: #08264A;
+}
+
+.taille{
+    margin-top: 40px;
+}
+
+.taille .titleTaille{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleTaille p{
+    color: #00000080;
+    font-size: 12px;
+}
+
+.taille h3{
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.taille .list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.taille .list div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.select{
+    border: 1px solid #00000026;
+    font-weight: bolder;
+    color: black;
+}
+
+.add{
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #2E6BF5;
+    color: white;
+}
+
+.add p{
+    margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    .left{
+        width: 60%;
+    }
+
+    .right{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1074px){
+    .main{
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .left img{
+        height: 455px;
+        width: 532px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .main{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .add{
+        margin-bottom: 40px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .left img{
+        height: 355px;
+        width: 432px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .add{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .left img{
+        height: 305px;
+        width: 382px;
+    }
+}
+

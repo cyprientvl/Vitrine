@@ -1,0 +1,43 @@
+@import 'aos/dist/aos.css';
+
+html, body{
+    font-family: 'Faktum', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #000000;
+    background-color: #F4F5F7;
+    scroll-behavior: smooth;
+    text-align: center;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: visible !important;
+}
+
+a{
+    text-decoration: none;
+}
+*:focus{
+    outline: none!important;
+}
+*{
+    box-sizing: border-box;
+}
+::selection{
+    color: #F4F5F7;
+    background: #000000;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #F4F5F7;
+}
+::-webkit-scrollbar-thumb{
+    background: #2E6BF5;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #112758;
+}
