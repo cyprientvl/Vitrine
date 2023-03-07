@@ -21,7 +21,6 @@ export class ProductComponent implements AfterViewInit {
       if(data){
         this.infoItem = data[this.route.snapshot.params['id']];
         console.log(this.infoItem)
-  
         this.image = this.infoItem.images
       }
       
