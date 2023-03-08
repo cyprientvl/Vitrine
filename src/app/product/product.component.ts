@@ -63,6 +63,7 @@ export class ProductComponent {
     for(let i in this.infoItem.variants[this.color[n]]){
       this.taille.push({size: this.infoItem.variants[this.color[n]][i].nom, price: this.infoItem.variants[this.color[n]][i].prix/100})
     }
+    this.selectSize(0);
   }
 
   selectSize(n: number){
