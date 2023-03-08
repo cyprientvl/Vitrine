@@ -16,14 +16,19 @@ export class ProductComponent implements AfterViewInit {
   image = []
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private route: ActivatedRoute, private item: ItemService){
     
-    
-    this.item.getItem().subscribe((data)=>{
+    /*this.item.getItem().subscribe((data)=>{
       if(data){
         this.infoItem = data[this.route.snapshot.params['id']];
         console.log(this.infoItem)
         this.image = this.infoItem.images
       }
       
+    })*/
+    this.item.get().subscribe((data: any)=>{
+      if(data){
+        this.infoItem = data[this.route.snapshot.params['id']];
+        this.image = this.infoItem.images;
+      }
     })
   }
 
