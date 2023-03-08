@@ -16,6 +16,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ItemService } from './services/item.service';
+import { NgxLoadingModule } from 'ngx-loading';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -40,13 +41,16 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgxLoadingModule.forRoot({})
+
   ],
   providers: [],
   bootstrap: [AppComponent]

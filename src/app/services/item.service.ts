@@ -10,23 +10,15 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class ItemService{
  
 
-    //private item: BehaviorSubject<any>
     private item: any;
     constructor(private http: HttpClient){
-        //this.item = new BehaviorSubject<any>([]);
     }
 
     get(){
         return this.http.get(`https://apishop.sneakify.fr/ `);
 
-        /*return this.http.get(`https://apishop.sneakify.fr/ `).subscribe( (data)=>{
-            //this.item.next(data);
-            
-        });*/
     }
 
-    /*getItem(){
-        return this.item.asObservable();
-    }*/
+    
 
 }

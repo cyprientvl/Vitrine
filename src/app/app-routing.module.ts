@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: "404", component: Erreur404Component},
   {path: "Mentions-Legales", component: MentionsLegalesComponent},
   {path: "shop", component: ShopComponent},
-  {path: "product/:id", component: ProductComponent},
+  {path: "shop/product/:id", component: ProductComponent},
   {path: "cart", component: CartComponent},
   {path: "", component: HomeComponent},
   {path: "**", redirectTo: '/' }

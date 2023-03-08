@@ -10,6 +10,10 @@
     justify-content: center;
 }
 
+#image-carousel{
+    width: 100%;
+}
+
 .left img{
     height: 555px;
     width: 632px;
@@ -77,19 +81,10 @@
     border: 1px solid black;
     height: 12px;
     width: 12px;
+    cursor: pointer;
 }
 
-.colors .list div:nth-child(1){
-    background-color: #F4F4F4;
-}
 
-.colors .list div:nth-child(2){
-    background-color: #000000;
-}
-
-.colors .list div:nth-child(3){
-    background-color: #08264A;
-}
 
 .taille{
     margin-top: 40px;

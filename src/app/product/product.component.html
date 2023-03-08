@@ -1,4 +1,7 @@
 
+<ngx-loading [show]="loading" [config]="{fullScreenBackdrop: true}"></ngx-loading>
+
+
 <div class="main" >
     <div class="left">
 
@@ -30,9 +33,8 @@
         <div class="colors">
             <h3>Coloris</h3>
             <div class="list">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div *ngFor="let i of color, let a = index"  [ngStyle]="{'background-color':i}" (click)="selectColor(a)" ></div>
+            
             </div>
         </div>
 
@@ -42,17 +44,13 @@
                 <p>Guides des tailles</p>
             </div>
             <div class="list">
-                <div class="select">XS</div>
-                <div>S</div>
-                <div>M</div>
-                <div>L</div>
-                <div>XL</div>
+                <div *ngFor="let i of taille, let a = index" [ngClass]="price.size == i.size?['select']:[]" (click)="selectSize(a)" >{{i.size}}</div>
             </div>
         </div>
 
         <div class="add">
             <p>Ajouter au panier</p>
-            <p>34,95€</p>
+            <p>{{price.price}} €</p>
         </div>
 
     </div>
