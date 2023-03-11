@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-main:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.5.0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build:ssr
+      - name: FTP Deployer Server
+        uses: sand4rt/ftp-deployer@v1.5
+        with:
+          host: 'ladifsoftwares.gotdns.ch'
+          username: 'Ladif_sneakifyshop'
+          password: 'NDIstBRHQZUQ2eJe'
+          remote_folder: '/private/server'
+          local_folder: 'dist/Sneakify-Vitrine/server'
+          cleanup: false
+          include: '[ "*", "**/*" ]'
+          exclude: '[".github/**", ".git/**", "*.env"]'
+      - name: FTP Deployer Browser
+        uses: sand4rt/ftp-deployer@v1.5
+        with:
+          host: 'ladifsoftwares.gotdns.ch'
+          username: 'Ladif_sneakifyshop'
+          password: 'NDIstBRHQZUQ2eJe'
+          remote_folder: '/private/server/dist/Sneakify-Vitrine/browser'
+          local_folder: 'dist/Sneakify-Vitrine/browser'
+          cleanup: false
+          include: '[ "*", "**/*" ]'
+          exclude: '[".github/**", ".git/**", "*.env"]'
+      - name: Purge cache
+        uses: jakejarvis/cloudflare-purge-action@master
+        env:
+          CLOUDFLARE_ZONE: '31c3f01b2b4eb62385dca899769bdcec'
+          CLOUDFLARE_TOKEN: 'K41WJ_MV9PmahPfeHXTF5hEjIpLhIMEuljUVqmPG'

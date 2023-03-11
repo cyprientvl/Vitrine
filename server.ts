@@ -8,6 +8,8 @@ import { join } from 'path';
 
 import { AppServerModule } from './src/main.server';
 
+require('dotenv').config()
+
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
