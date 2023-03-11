@@ -353,6 +353,10 @@ footer ul li span{
         display: none;
     }
 
+    .roundbleu{
+        margin-left: 0px;
+    }
+
     header{
         position: fixed;
         top: 0;
