@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: "home", component: HomeComponent},
   {path: "conditions",component: ConditionsComponent},
   {path: "confidentialite", component: ConfidentialiteComponent},
-  {path: "Mentions-Legales", component: MentionsLegalesComponent},
+  {path: "mentions-legales", component: MentionsLegalesComponent},
   {path: "shop", component: ShopComponent},
   {path: "shop/product/:id", component: ProductComponent},
   {path: "cart", component: CartComponent},

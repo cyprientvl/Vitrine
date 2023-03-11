@@ -618,7 +618,7 @@
     }
     #accueil .img2 {
         top: 15vh;
-        width: 400px;
+        width: 100%;
     }
 
     #fonctionnalités ul {
