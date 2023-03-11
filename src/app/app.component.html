@@ -10,7 +10,7 @@
         </a>
       </li>
       <li>
-        <a href="#fonctionnalités" onclick="openmenu()">
+        <a href="#fonctionnalités" (click)="openmenu()">
           {{'HEADER.a1' | translate}} 
 
         </a>
@@ -38,7 +38,7 @@
 
       <li class="panier">
         <div class="roundbleu"></div>
-        <a routerLink="cart">{{'HEADER.a7' | translate}}</a>
+        <a routerLink="cart" (click)="openmenu()">{{'HEADER.a7' | translate}}</a>
       </li>
 
       <li>
