@@ -21,7 +21,7 @@
     <div class="right" *ngIf="infoItem != null">
 
         <div class="absolut">
-            <p>{{'PRODUCT.p1' | translate}}</p>
+            <!--<p>{{'PRODUCT.p1' | translate}}</p>-->
             <p>{{'PRODUCT.p2' | translate}}</p>
         </div>
 
@@ -41,7 +41,7 @@
         <div class="taille">
             <div class="titleTaille">
                 <h3>{{'PRODUCT.p4' | translate}}</h3>
-                <p>{{'PRODUCT.p5' | translate}}</p>
+                <!--<p>{{'PRODUCT.p5' | translate}}</p>-->
             </div>
             <div class="list">
                 <div *ngFor="let i of taille, let a = index" [ngClass]="price.size == i.size?['select']:[]" (click)="selectSize(a)" >{{i.size}}</div>
