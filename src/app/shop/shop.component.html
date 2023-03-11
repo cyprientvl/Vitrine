@@ -9,7 +9,7 @@
 <div class="center">
     <div class="contentArticle">
         
-        <div class="article" *ngFor="let item of listItem, let i = index">
+        <div class="article" *ngFor="let item of listItem, let i = index" (click)="redirectProduct(i)">
             <div class="livraison">
                 <span class="material-symbols-outlined">
                     local_shipping
