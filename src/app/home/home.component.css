@@ -465,6 +465,9 @@
     display: block;
 }
 
+.test{
+    width: 100% !important;
+}
 
 #popup{
     display: none;
@@ -476,6 +479,7 @@
     background-color: white;
     z-index: 99999;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 #popup img{
@@ -789,7 +793,7 @@
     }
 
     #more #img3 {
-        width: 400px;
+        width: 100%;
         bottom: -45vh;  
     }
     #newsletter form{

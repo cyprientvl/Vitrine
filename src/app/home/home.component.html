@@ -169,7 +169,7 @@
             <div class="imgg">
                 <img src="assets/img/fonctionnalités/carde.png" alt="Image Iphone Outils" class="modifwidth">
             </div>
-        </li>
+        </li> 
     </ul>
 </section>
 
@@ -216,17 +216,16 @@
         </form>
     </div>
 
-    <!--mailchimp-->
 </section>
 <section id="applestore">
     <img src="assets/img/fonctionnalités/suivievente.png" id="img4" alt="IPHONE Sneakify Dark mode 2">
     <div class="opa opacityblack" [ngStyle]="{'height': tkt2}" style="transform: unset; bottom: unset; top: -2px;"></div>
-    <!-- <div class="<?php if ($language == "FR") { echo "elfsight-app-5b4b33d2-0831-4d3b-b591-65cd04a8cd97"; } else { echo "elfsight-app-a5e7cf23-8223-43a4-aafd-fe3e622e9e32"; } ?>" style="margin-top: -200px; margin-bottom: 50px;"></div>-->
 </section>
 
-<div *ngIf="getCurrentLanguage() == 'fr'" class="elfsight-app-5b4b33d2-0831-4d3b-b591-65cd04a8cd97" style="margin-top: -200px; margin-bottom: 50px;"></div>
-<div *ngIf="getCurrentLanguage() != 'fr'" class="elfsight-app-a5e7cf23-8223-43a4-aafd-fe3e622e9e32" style="margin-top: -200px; margin-bottom: 50px;"></div>
-
+<div class="test">
+    <div *ngIf="getCurrentLanguage() == 'fr'" class="elfsight-app-5b4b33d2-0831-4d3b-b591-65cd04a8cd97" style="margin-top: -200px; margin-bottom: 50px; width: 100%;"></div>
+    <div *ngIf="getCurrentLanguage() != 'fr'" class="elfsight-app-a5e7cf23-8223-43a4-aafd-fe3e622e9e32" style="margin-top: -200px; margin-bottom: 50px; width: 100%;"></div>
+</div>
 
 <div class="popNewsLetter" *ngIf="newLetter">
     <span class="material-symbols-outlined" (click)="newLetter = false">
