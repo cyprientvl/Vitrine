@@ -412,11 +412,15 @@ footer ul li span{
     }
 
     header nav ul li:nth-of-type(7){
-        transition: 1.3s;
+        transition: 1.1s;
+    }
+
+    header nav ul li:nth-of-type(8){
+        transition: 1.5s;
         float: unset;
     }
 
-    .openned nav ul li:nth-of-type(2), .openned nav ul li:nth-of-type(3), .openned nav ul li:nth-of-type(4), .openned nav ul li:nth-of-type(5), .openned nav ul li:nth-of-type(6), .openned nav ul li:nth-of-type(7){
+    .openned nav ul li:nth-of-type(2), .openned nav ul li:nth-of-type(3), .openned nav ul li:nth-of-type(4), .openned nav ul li:nth-of-type(5), .openned nav ul li:nth-of-type(6), .openned nav ul li:nth-of-type(7),.openned nav ul li:nth-of-type(8) {
         transform: translateX(0);
     }
 
