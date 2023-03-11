@@ -435,3 +435,10 @@ footer ul li span{
         content: none!important;
     }
   }
+
+
+  @media screen and (max-width: 440px){
+    .download a{
+        font-size: 15px !important;
+    }
+  }
