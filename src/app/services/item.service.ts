@@ -19,6 +19,14 @@ export class ItemService{
 
     }
 
+    getbyId(id: string){
+        return this.http.get(`https://apishop.sneakify.fr/?id=`+id);
+    }
+
+    payer(data: any){
+        return this.http.post('https://apishop.sneakify.fr/payer.php', data);
+    }
+
     
 
 }

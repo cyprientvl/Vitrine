@@ -6,6 +6,9 @@
 p{
     margin: 0;
 }
+#image-carousel{
+    width: 100%;
+}
 
 .left{
     width: 60%;
@@ -52,11 +55,17 @@ p{
     padding: 12px;
     transition: 0.3s;
     cursor: pointer;
+    
 }
 
-.finish:hover{
+.f:hover{
     background-color: white;
     color: #2E6BF5;
+}
+
+
+.contrySelect{
+    border: none;
 }
 
 .total p{
@@ -131,6 +140,7 @@ p{
 
 .article .mid{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 

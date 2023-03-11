@@ -2,6 +2,7 @@ import { Component, HostListener, Renderer2, ElementRef, Inject, PLATFORM_ID } f
 import * as AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,7 +12,7 @@ export class HomeComponent {
 
   newLetter = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private renderer: Renderer2, private el: ElementRef, private translate: TranslateService) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private renderer: Renderer2, private el: ElementRef, private translate: TranslateService, private http: HttpClient) {
   }
 
   @HostListener('window:resize', ['$event'])
@@ -58,5 +59,14 @@ export class HomeComponent {
   tkt1 = ""
   tkt2 = ""
   dejaActiver= false;
+
+
+  input = "";
+  newsLetter(){
+    this.http.post("https://apishop.sneakify.fr/emails.php", {email: this.input}).subscribe(data=>{
+      console.log(data)
+    })
+    this.input = "";
+  }
   
 }

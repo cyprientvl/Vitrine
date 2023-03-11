@@ -208,8 +208,8 @@
     </p>
     <div class="form">
         <form method="post" action="" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" placeholder="email@domain.com" name="email" id="email">
-            <button type="submit" name="submit" id="submit">
+            <input type="text" placeholder="email@domain.com" name="email" id="email" [(ngModel)]="input" required>
+            <button type="submit" name="submit" id="submit" (click)="newsLetter()">
                 {{'HOME.p31' | translate}}
 
             </button>
@@ -242,8 +242,8 @@
 
     <div class="form">
         <form method="post" action="" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" placeholder="email@domain.com" name="email" id="email">
-            <button type="submit" name="submit" id="submit">
+            <input type="text" placeholder="email@domain.com" name="email" id="email" [(ngModel)]="input" required>
+            <button type="submit" name="submit" id="submit" (click)="newsLetter()">
                 {{'HOME.p31' | translate}}
             </button>
         </form>

@@ -73,6 +73,8 @@
     font-weight: 400;
     font-size: 15px;
     color: #000000CC;
+    height: 68px;
+    overflow: hidden;
 }
 
 .article .price{
@@ -149,4 +151,55 @@
   'GRAD' 0,
   'opsz' 48
 
+}
+
+@media screen and (max-width: 1040px){
+    .contentArticle{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 770px){
+    .article{
+        width: 250px;    
+    }
+    
+    .article img{
+        width: 230px;
+        height: 190px;
+    }
+
+    .livraison p{
+        font-size: 12px;
+    }
+
+    .livraison span{
+        font-size: 17px;
+    }
+    
+
+    .voirPlus{
+        padding: 10px 30px;
+    }
+
+    .contentArticle{
+        gap: 25px;
+    }
+
+   
+
+}
+
+
+@media screen and (max-width: 560px){
+    .contentArticle{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2{
+        font-size: 90px !important;
+    }
+    
+    
 }

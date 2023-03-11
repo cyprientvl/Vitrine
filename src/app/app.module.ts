@@ -17,7 +17,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ItemService } from './services/item.service';
 import { NgxLoadingModule } from 'ngx-loading';
-
+import { FormsModule } from '@angular/forms';
+import { MerciComponent } from './merci/merci.component';
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
@@ -35,13 +36,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MentionsLegalesComponent,
     ShopComponent,
     ProductComponent,
+    MerciComponent
     
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
-
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -49,7 +50,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    NgxLoadingModule.forRoot({})
+    NgxLoadingModule.forRoot({}),
+    FormsModule
 
   ],
   providers: [],

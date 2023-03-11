@@ -5,7 +5,8 @@
     "a3": "Recruitments",
     "a4": "Contact us",
     "a5": "Download the app",
-    "a6": "Français"
+    "a6": "Français",
+    "a7": "Cart"
 
   },
 
@@ -68,6 +69,46 @@
     "p10": "If you need help, head over to Sneakify support or our Instagram: @sneakify_fr",
     "p11": "Download for free"
 
+  },
+
+
+  "CART":{
+    "p1": "article",
+    "p2": "Shipping costs",
+    "p3": "Calculated at the time of the order",
+    "p4": "Country of delivery",
+    "p5": "France",
+    "p6": "Outside France",
+    "p7": "TOTAL",
+    "p8": "Promotional code",
+    "p9": "at the time of the order",
+    "p10": "FINALIZE THE ORDER",
+    "p11": "NO ITEM",
+    "p12": "Delete",
+    "p13": "Size"
+  },
+
+  "MERCI":{
+    "p1": "THANKS",
+    "p2": "Thank you for placing your order.",
+    "p3": "A confirmation e-mail has been sent!"
+  },
+
+  "PRODUCT":{
+    "p1": "Composition details",
+    "p2": "Delivery and return",
+    "p3": "Colors",
+    "p4": "Size",
+    "p5": "Size Guides",
+    "p6": "Add to cart",
+    "p7": "Product added",
+    "p8": "More stock"
+  },
+
+  "SHOP":{
+    "p1": "Find the item that best defines your style!",
+    "p2": "Free shipping",
+    "p3": "Learn more"
   },
 
   "FOOTER":{

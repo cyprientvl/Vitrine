@@ -1,113 +1,96 @@
-<div class="main">
+<ngx-loading [show]="loading" [config]="{fullScreenBackdrop: true}"></ngx-loading>
+<ngx-loading [show]="loadingPaye" [config]="{fullScreenBackdrop: true}"></ngx-loading>
+
+
+<div class="main" *ngIf="!loading">
     <div class="left">
-        <img src="../../assets/img/T-Shirt.png">
+        <div id="image-carousel" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide" *ngFor="let item of listImage">
+                    <div class="part-img">
+                        <img [src]="item" loading="lazy">
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
     </div>
     <div class="right">
         <div class="top">
             <div class="totoArticle">
-                <p class="gray">1 article</p>
-                <p class="gray">34,95€</p>
+                <p class="gray">{{total.n}} {{'CART.p1' | translate}}</p>
+                <p class="gray">{{total.price}}€</p>
             </div>
 
             <div class="livraison">
-                <p class="gray">Frais de livraison</p>
-                <p class="gray">Calculé au moment de la commande</p>
+                <p class="gray">{{'CART.p2' | translate}}</p>
+                <p class="gray">{{'CART.p3' | translate}}</p>
             </div>
 
             <div class="pay">
-                <p class="gray">Pays de livraison</p>
-                <p class="gray">au moment de la commande</p>
+                <p class="gray">{{'CART.p4' | translate}}</p>
+                <select [(ngModel)]="total.country" class="contrySelect">
+                    <option value="FR">{{'CART.p5' | translate}}</option>
+                    <option value="EUR">{{'CART.p6' | translate}}</option>
+                </select>
             </div>
 
             <div class="total">
-                <p>TOTAL</p>
-                <p class="ch">34,95€</p>
+                <p>{{'CART.p7' | translate}}</p>
+                <p class="ch">{{total.price}}€</p>
             </div>
 
             <div class="codePromo">
-                <p class="gray">Code promotionnel</p>
-                <p class="gray">au moment de la commande</p>
+                <p class="gray">{{'CART.p8' | translate}}</p>
+
+                <p class="gray">{{'CART.p9' | translate}}</p>
             </div>
 
-            <div class="finish">FINALISER LA COMMANDE</div>
+            <div class="finish f"  *ngIf="MainList.length != 0" (click)="sendCart()">{{'CART.p10' | translate}}</div>
+            <div class="finish" *ngIf="MainList.length == 0" [ngStyle]="{'background-color': 'gray'}">{{'CART.p11' | translate}}</div>
+
         </div>
 
         <div class="articlesAll">
-            <div class="article">
+            <div class="article" *ngFor="let item of MainList, let i = index">
                 <div class="delete">
-                    <p>Supprimer</p>
+                    <p (click)="removeCart(item.id)">{{'CART.p12' | translate}}</p>
                 </div>
                 <div class="mid">
                     <div class="articleleft">
-                        <img src="../../assets/img/T-Shirt.png">
+                        <img [src]="item.image">
         
                     </div>
                     <div class="articleright">
                         <div class="articleTitle">
-                            <h4>T-Shirt Staff</h4>
-                            <p>Staff Shirt Sneakify first drop.</p>
+                            <h4>{{item.nom}}</h4>
+                            <p [innerHTML]="item.desc"></p>
                         </div>
         
                         <div class="info">
                             <div>
-                                <p>Taille</p>
-                                <select name="test">
-                                    <option>S</option>
-                                    <option>M</option>
-                                </select>
+                                <p>{{'CART.p13' | translate}}</p>
+                                <p [ngStyle]="{'padding-left': '5px'}">{{item.taille}}</p>
                             </div>
                             <div>
                                 <p>Qté</p>
-                                <select name="test">
-                                    <option>1</option>
-                                    <option>2</option>
+                                <select [(ngModel)]="item.q" (change)="getTotal()">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
                                 </select>
                             </div>
+                            
                             <div>
-                                <p class="price">34,95€</p>
+                                <p class="price">{{item.price}}€</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="article">
-                <div class="delete">
-                    <p>Supprimer</p>
-                </div>
-                <div class="mid">
-                    <div class="articleleft">
-                        <img src="../../assets/img/T-Shirt.png">
-        
-                    </div>
-                    <div class="articleright">
-                        <div class="articleTitle">
-                            <h4>T-Shirt Staff</h4>
-                            <p>Staff Shirt Sneakify first drop.</p>
-                        </div>
-        
-                        <div class="info">
-                            <div>
-                                <p>Taille</p>
-                                <select name="test">
-                                    <option>S</option>
-                                    <option>M</option>
-                                </select>
-                            </div>
-                            <div>
-                                <p>Qté</p>
-                                <select name="test">
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-                            <div>
-                                <p class="price">34,95€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 

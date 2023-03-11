@@ -4,6 +4,7 @@ import { ItemService } from '../services/item.service';
 import Splide from '@splidejs/splide';
 import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -18,10 +19,12 @@ export class ProductComponent {
   image = []; //image du slider
 
   color: any = []; //tt les couleurs dispo
-  price = {size: "", price: 0} //la size select avec sont prix et la couleur select
+  price = {size: "", price: 0, color: "", id: ""} //la size select avec sont prix et la couleur select
   taille: any = []; //les tailles avec leurs prix de la couleur select
+  id: any = []; //les id des item avec la couleur select
 
 
+  stock = true;
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private route: ActivatedRoute, private item: ItemService, private router: Router){
     
     this.item.get().subscribe((data: any)=>{
@@ -36,8 +39,12 @@ export class ProductComponent {
             this.color.push(i)
           }
 
-          this.selectColor(0);
-          this.selectSize(0);
+          if(this.color.length == 0){
+            this.stock = false;
+          }else{
+            this.selectColor(0);
+
+          }
   
           const sleep = (m: number | undefined) => new Promise(r => setTimeout(r, m));
   
@@ -60,15 +67,44 @@ export class ProductComponent {
 
   selectColor(n: number){
     this.taille = [];
+    this.id = [];
     for(let i in this.infoItem.variants[this.color[n]]){
       this.taille.push({size: this.infoItem.variants[this.color[n]][i].nom, price: this.infoItem.variants[this.color[n]][i].prix/100})
+      this.id.push(this.infoItem.variants[this.color[n]][i].id)
+      this.price.color = i;
     }
+
+    this.price.color = this.color[n];
     this.selectSize(0);
   }
 
   selectSize(n: number){
+    this.price.id = this.id[n];
     this.price.size = this.taille[n].size;
     this.price.price = this.taille[n].price;
+  }
+
+
+  animation = false;
+  localStorage: Array<any> = [];
+
+
+  
+
+
+  addToCart(){
+
+    if(!this.animation){
+
+      let temp = localStorage.getItem('cartSneakify') || "";
+      temp = temp + this.price.id + ","
+      localStorage.setItem('cartSneakify', temp);
+
+      this.animation = true;
+      setTimeout(()=>{
+        this.animation = false;
+      }, 2000)
+    }
 
   }
   

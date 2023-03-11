@@ -72,7 +72,7 @@ header nav ul .download a, header nav ul li:last-of-type a{
 }
 header nav ul .download {
     transition: .3s;
-    margin-left: 75px;
+    margin-left: 50px;
     margin-right: 0;
 }
 header nav ul .download:hover a, header nav ul li:last-of-type:hover a{
@@ -299,6 +299,22 @@ footer ul li span{
 #popup ul li{
     padding: 10px 0;
 }
+
+.panier{
+    display: inline-block;
+}
+
+.roundbleu{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 5px;
+    background-color: #2E6BF5;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transform: translateY(-3px);
+}
+
 
   @media screen and (max-width: 1355px) {
     nav ul li{

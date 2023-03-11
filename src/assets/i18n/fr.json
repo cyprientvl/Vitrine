@@ -5,7 +5,9 @@
     "a3": "Recrutements",
     "a4": "Nous contacter",
     "a5": "Télécharger l'application",
-    "a6": "English"
+    "a6": "English",
+    "a7": "Panier"
+
 
   },
 
@@ -72,6 +74,46 @@
     "p10": "Si vous avez besoin d'aide, rendez-vous sur le support Sneakify ou sur notre Instagram : @sneakify_fr",
     "p11": "Télécharger gratuitement"
 
+  },
+
+  "CART":{
+    "p1": "article",
+    "p2": "Frais de livraison",
+    "p3": "Calculé au moment de la commande",
+    "p4": "Pays de livraison",
+    "p5": "France",
+    "p6": "Hors France",
+    "p7": "TOTAL",
+    "p8": "Code promotionnel",
+    "p9": "au moment de la commande",
+    "p10": "FINALISER LA COMMANDE",
+    "p11": "AUCUN ARTICLE",
+    "p12": "Supprimer",
+    "p13": "Taille"
+  },
+
+
+  "MERCI":{
+    "p1": "MERCI",
+    "p2": "Nous te remercions d’avoir passé commande.",
+    "p3": "Un e-mail de confirmation a été envoyé !"
+  },
+
+  "PRODUCT":{
+    "p1": "Détails composition",
+    "p2": "Livraison et retour",
+    "p3": "Coloris",
+    "p4": "Taille",
+    "p5": "Guides des tailles",
+    "p6": "Ajouter au panier",
+    "p7": "Produit ajouté",
+    "p8": "Plus de stock"
+  },
+
+  "SHOP":{
+    "p1": "Trouve l’article qui définit le mieux ton style !",
+    "p2": "Livraison gratuite",
+    "p3": "En savoir plus"
   },
 
   "FOOTER":{

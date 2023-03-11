@@ -21,8 +21,8 @@
     <div class="right" *ngIf="infoItem != null">
 
         <div class="absolut">
-            <p>Détails composition</p>
-            <p>Livraison et retour</p>
+            <p>{{'PRODUCT.p1' | translate}}</p>
+            <p>{{'PRODUCT.p2' | translate}}</p>
         </div>
 
         <div class="titre">
@@ -31,26 +31,31 @@
         </div>
 
         <div class="colors">
-            <h3>Coloris</h3>
+            <h3>{{'PRODUCT.p3' | translate}}</h3>
             <div class="list">
-                <div *ngFor="let i of color, let a = index"  [ngStyle]="{'background-color':i}" (click)="selectColor(a)" ></div>
+                <div *ngFor="let i of color, let a = index"  [ngStyle]="price.color == i ?{'background-color':i, 'transform': 'scale(1.2)'}: {'background-color':i}" (click)="selectColor(a)" ></div>
             
             </div>
         </div>
 
         <div class="taille">
             <div class="titleTaille">
-                <h3>Taille</h3>
-                <p>Guides des tailles</p>
+                <h3>{{'PRODUCT.p4' | translate}}</h3>
+                <p>{{'PRODUCT.p5' | translate}}</p>
             </div>
             <div class="list">
                 <div *ngFor="let i of taille, let a = index" [ngClass]="price.size == i.size?['select']:[]" (click)="selectSize(a)" >{{i.size}}</div>
             </div>
         </div>
 
-        <div class="add">
-            <p>Ajouter au panier</p>
-            <p>{{price.price}} €</p>
+        <div class="add" *ngIf="stock" [ngClass]="animation? ['activeAdd']:[]" (click)="addToCart()">
+            <p  *ngIf="animation">{{'PRODUCT.p7' | translate}}</p>
+            <p  *ngIf="!animation">{{'PRODUCT.p6' | translate}}</p>
+            <p>{{!animation? price.price + "€": "✓"}}</p>
+        </div>
+
+        <div class="add" *ngIf="!stock" [ngClass]="['activeAdd']" [ngStyle]="{'justify-content':'center'}">
+            <p>{{'PRODUCT.p8' | translate}}</p>
         </div>
 
     </div>
