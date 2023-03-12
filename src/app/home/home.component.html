@@ -228,7 +228,7 @@
 </div>
 
 <div class="popNewsLetter" *ngIf="newLetter">
-    <span class="material-symbols-outlined" (click)="newLetter = false">
+    <span class="material-symbols-outlined" (click)="closePopUp()">
         close
         </span>
     <h2>{{'HOME.p28' | translate}}
@@ -245,8 +245,14 @@
             <button type="submit" name="submit" id="submit" (click)="newsLetter()">
                 {{'HOME.p31' | translate}}
             </button>
+            
         </form>
+            <p class="infonews" [ngStyle]="valider.val? {'color': 'green'}:{'color': 'red'}" >{{valider.msg}}</p>
+            
+        
     </div>
+
+    
 </div>
 
 

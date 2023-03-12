@@ -384,7 +384,6 @@
 
 .popNewsLetter .form{
     padding-top: 25px;
-    padding-bottom: 75px;
     display: block;
     position: relative;
 }
@@ -400,6 +399,14 @@
     border: 1px solid #0000001A;
 
 }
+
+.infonews{
+    margin: 0;
+    text-align: left;
+    width: 500px;
+    margin: 0px auto;
+}
+
 .popNewsLetter input[type="text"]{
     background-color: #F6F6F6;
     padding: 12px 20px;

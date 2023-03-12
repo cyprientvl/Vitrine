@@ -3,6 +3,8 @@ import * as AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -59,14 +61,21 @@ export class HomeComponent {
   tkt1 = ""
   tkt2 = ""
   dejaActiver= false;
-
-
   input = "";
+  valider = {msg: "", val: false};
+
   newsLetter(){
-    this.http.post("https://apishop.sneakify.fr/emails.php", {email: this.input}).subscribe(data=>{
-      console.log(data)
+    console.log(this.translate.currentLang)
+    this.http.post("https://apishop.sneakify.fr/emails.php", {email: this.input, lang: this.translate.currentLang}).subscribe((data: any)=>{
+      this.valider.msg = data.message
+      this.valider.val = data.valid
     })
     this.input = "";
+  }
+
+  closePopUp(){
+    this.valider.msg = "";
+    this.newLetter = false;
   }
   
 }
