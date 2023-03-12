@@ -45,44 +45,6 @@
             </div>
         </div>
 
-        <div class="article" *ngFor="let item of listItem, let i = index" (click)="redirectProduct(i)">
-            <div class="livraison">
-                <span class="material-symbols-outlined">
-                    local_shipping
-                    </span>
-                <p>{{'SHOP.p2' | translate}}</p>
-            </div>
-
-            <img src="{{item.images[0]}}">
-            <h3>{{ item.nom }}</h3>
-            <p class="desc" [innerHtml]="item.description"></p>
-            <p class="price">{{ listprice[i] == null? "Plus de stock" : listprice[i]+"€" }}</p>
-            <div class="seeMore">
-                <div class="voirPlus" (click)="redirectProduct(i)">
-                    {{'SHOP.p3' | translate}}
-                </div>
-
-                <div class="cart" *ngIf="listprice[i] == null" [ngStyle]="{'background-color':'gray'}">
-
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
-                    
-                </div>
-                <div class="cart" *ngIf="listprice[i] != null" (click)="addToCart(listId[i], i)">
-
-                    <span *ngIf="!listAnim[i]" class="material-symbols-outlined">
-                        shopping_cart
-                        </span>
-                    <span *ngIf="listAnim[i]" class="material-symbols-outlined">
-                        done
-                        </span>
-                </div>
-            </div>
-        </div>
-        
-        
-
     </div>
 </div>
 
