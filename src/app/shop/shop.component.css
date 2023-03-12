@@ -11,17 +11,19 @@
 
 .top h2 span{
     position: relative;
+    z-index: 1;
 }
 
 .top h2 span::after{
     content: "";
-    bottom: 8px;
+    bottom: 17px;
     left: 0;
     width: 100%;
     background-color: #2E6BF5;
-    height: 10px;
+    height: 8px;
     position: absolute;
     border-radius: 20px;
+    z-index: -1;
 }
 .top p{
     font-size: 18px;
@@ -33,8 +35,9 @@
 }
 
 .contentArticle{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 !important;
     gap: 50px;
     margin-bottom: 10px !important;
@@ -187,16 +190,17 @@
         gap: 25px;
     }
 
+    .desc{
+        height: 60px !important;
+    }
+
    
 
 }
 
 
 @media screen and (max-width: 560px){
-    .contentArticle{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
+    
     h2{
         font-size: 90px !important;
     }
