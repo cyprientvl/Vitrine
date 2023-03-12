@@ -405,6 +405,11 @@
     text-align: left;
     width: 500px;
     margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.modifinfo{
+    width: 500px !important;
 }
 
 .popNewsLetter input[type="text"]{
